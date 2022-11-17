@@ -50,6 +50,7 @@ public class RoomSpawner : MonoBehaviour{
         if(other.CompareTag("SpawnPoint")) {
             if(other.GetComponent<RoomSpawner>().spawned == false && spawned == false) {
                 // Spawn walls blocking off opening
+                templates = GameObject.FindGameObjectWithTag("Rooms").GetComponent<RoomTemplates>();
                 Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
                 Destroy(gameObject);
             }
