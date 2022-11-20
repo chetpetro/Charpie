@@ -11,12 +11,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        ProcessInputs();
     }
 
     void FixedUpdate()
     {
-
+        Move();
     }
 
     void ProcessInputs()
@@ -27,9 +27,9 @@ public class PlayerMovement : MonoBehaviour
         moveDirection = new Vector2(moveX, moveY);
     }
 
-    private void OnAnimatorMove()
+    void Move()
     {
-
+        Rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
     }
 
 }
