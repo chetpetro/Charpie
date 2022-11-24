@@ -14,42 +14,23 @@ public class RoomTemplates : MonoBehaviour {
 
     public List<GameObject> rooms;
 
-    public float waitTimeSet;
-    private float waitTime;
+    public float waitTime;
 
     private void Start()
     {
-        waitTime = waitTimeSet;
+        waitTime = 3f;
     }
-
-
     private void Update(){
         if(waitTime <= 0){
-            if (rooms.Count > 30)
-            {
-                for (int i = 0; i < rooms.Count; i++)
-                {
+            if (rooms.Count < 25){
+                for (int i = rooms.Count-1; i >= 0; i--){
                     Destroy(rooms[i]);
-                    // remove index from list *********************
+                    rooms.Remove(rooms[i]);
                 }
-                waitTime = waitTimeSet;
-                Instantiate(startRoom, transform.position, Quaternion.identity);
-                rooms.Clear();
-                Debug.Log("Too Big");
-            }
-            else if (rooms.Count < 15)
-            {
-                for (int i = 0; i < rooms.Count; i++)
-                {
-                    Destroy(rooms[i]);
-                    // remove index from list *********************
-                }
-                waitTime = waitTimeSet;
-                Instantiate(startRoom, transform.position, Quaternion.identity);
+                waitTime = 3f;
+                Instantiate(startRoom, transform.position, transform.rotation);
                 rooms.Clear();
                 Debug.Log("Too Small");
-
-
             }
         }
         else{
