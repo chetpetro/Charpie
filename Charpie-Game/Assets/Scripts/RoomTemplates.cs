@@ -25,7 +25,7 @@ public class RoomTemplates : MonoBehaviour {
             if (rooms.Count < 25){
                 for (int i = rooms.Count-1; i >= 0; i--){
                     Destroy(rooms[i]);
-                    rooms.Remove(rooms[i]);
+                    
                 }
                 waitTime = 3f;
                 Instantiate(startRoom, transform.position, transform.rotation);
