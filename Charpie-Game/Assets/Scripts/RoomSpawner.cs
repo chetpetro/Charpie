@@ -23,16 +23,20 @@ public class RoomSpawner : MonoBehaviour{
 
     void Spawn(){
         if(spawned == false) {
-            if (openingDirection == 1) {
+            if (openingDirection == 1)
+            {
                 // need to spawn bottom door
                 rand = Random.Range(0, templates.bottomRooms.Length); // Chooses a random index in the cooresponding RoomTemplate list
 
                 // Start Capping the rooms if greater than desired size
-                if(templates.rooms.Count > 30){
+                if (templates.rooms.Count > 30)
+                {
                     rand = 0;
                 }
                 Instantiate(templates.bottomRooms[rand], transform.position, templates.bottomRooms[rand].transform.rotation); // Spawn a new room
-            } else if (openingDirection == 2) {
+            }
+            else if (openingDirection == 2)
+            {
                 // need to spawn top door
                 rand = Random.Range(0, templates.topRooms.Length);
 
@@ -42,7 +46,9 @@ public class RoomSpawner : MonoBehaviour{
                     rand = 0;
                 }
                 Instantiate(templates.topRooms[rand], transform.position, templates.topRooms[rand].transform.rotation);
-            } else if (openingDirection == 3) {
+            }
+            else if (openingDirection == 3)
+            {
                 // need to spawn left door
                 rand = Random.Range(0, templates.leftRooms.Length);
 
@@ -52,7 +58,9 @@ public class RoomSpawner : MonoBehaviour{
                     rand = 0;
                 }
                 Instantiate(templates.leftRooms[rand], transform.position, templates.leftRooms[rand].transform.rotation);
-            } else if (openingDirection == 4) {
+            }
+            else if (openingDirection == 4)
+            {
                 // need to spawn right door
                 rand = Random.Range(0, templates.rightRooms.Length);
 
@@ -63,7 +71,6 @@ public class RoomSpawner : MonoBehaviour{
                 }
                 Instantiate(templates.rightRooms[rand], transform.position, templates.rightRooms[rand].transform.rotation);
             }
-            templates.waitTime += 0.1f;
             spawned = true;
         }
     }
