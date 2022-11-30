@@ -7,8 +7,9 @@ public class RoomEntry : MonoBehaviour
     public GameObject doors;
     public GameObject trigger;
     public GameObject mask;
-    public int enemyCount;
+    private EnemySpawnPoints enemySpawnPoints;
     private bool beenTriggered = false;
+    private bool enemiesSpawned = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,13 +18,20 @@ public class RoomEntry : MonoBehaviour
             doors.SetActive(true);
             mask.SetActive(false);
             beenTriggered= true;
+
+            if (!enemiesSpawned)
+            {
+                enemySpawnPoints.spawnEnemies();
+                enemiesSpawned = true;
+            }
+            
         }
 
     }
 
     private void Update()
     {
-        if(enemyCount < 1)
+        if(enemySpawnPoints.enemyCount < 1)
         {
             doors.SetActive(false);
             if (beenTriggered)
