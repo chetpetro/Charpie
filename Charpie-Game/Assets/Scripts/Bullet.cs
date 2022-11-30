@@ -32,7 +32,7 @@ public class Bullet : MonoBehaviour
             Rb.velocity = direction * Mathf.Max(speed, 0f);
             bounceCount += 1;
 
-            if (bounceCount > 1000)
+            if (bounceCount > 10)
             {
                 Destroy(gameObject);
             }
