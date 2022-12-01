@@ -471,7 +471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2449512972016913305
 Transform:
   m_ObjectHideFlags: 0
@@ -767,10 +767,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8570197901377042682}
-  - component: {fileID: 8531327736005877590}
   m_Layer: 0
   m_Name: Enemy Spawn Points
-  m_TagString: Untagged
+  m_TagString: EnemySpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -806,23 +805,6 @@ Transform:
   m_Father: {fileID: 552114812057653369}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8531327736005877590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3244034475361998095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 405532744c4464717ad769fba24b6f59, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  enemyList: []
-  enemyCount: 0
 --- !u!1 &3271730545504383432
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,6 +910,27 @@ MonoBehaviour:
   doors: {fileID: 2241086494579826697}
   trigger: {fileID: 3660569952298618623}
   mask: {fileID: 2716748580062390516}
+  enemynumber: 0
+  enemyPoints:
+  - {fileID: 616842065403115911}
+  - {fileID: 4560627315420347797}
+  - {fileID: 228176468872115555}
+  - {fileID: 2707774135796643884}
+  - {fileID: 3778463867390152842}
+  - {fileID: 29464846220341732}
+  - {fileID: 8303008940912536497}
+  - {fileID: 1521260151993160716}
+  - {fileID: 8545450200745449720}
+  - {fileID: 2093558586972896038}
+  - {fileID: 9044454993119692944}
+  - {fileID: 7771862239114642415}
+  - {fileID: 9100978557198411894}
+  - {fileID: 2501259020261142417}
+  - {fileID: 4003714340880896226}
+  - {fileID: 3271730545504383432}
+  enemyList:
+  - {fileID: 4428247434300089301, guid: d1d6b3c382a86124e84a9e69d28b385d, type: 3}
+  enemyCount: 0
 --- !u!1 &3778463867390152842
 GameObject:
   m_ObjectHideFlags: 0

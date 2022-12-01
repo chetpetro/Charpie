@@ -74,7 +74,6 @@ MonoBehaviour:
   doors: {fileID: 1989686966346969279}
   trigger: {fileID: 1169962076055384778}
   mask: {fileID: 7243460471221189647}
-  enemyCount: 0
 --- !u!1 &1250999678981516219
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,7 +274,6 @@ MonoBehaviour:
   doors: {fileID: 1989686966346969279}
   trigger: {fileID: 3610894946038450086}
   mask: {fileID: 7243460471221189647}
-  enemyCount: 0
 --- !u!1 &4396713639702829735
 GameObject:
   m_ObjectHideFlags: 0
@@ -465,7 +463,6 @@ MonoBehaviour:
   doors: {fileID: 1989686966346969279}
   trigger: {fileID: 4637656519211571970}
   mask: {fileID: 7243460471221189647}
-  enemyCount: 0
 --- !u!1 &5557826057786755099
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +537,6 @@ MonoBehaviour:
   doors: {fileID: 1989686966346969279}
   trigger: {fileID: 5557826057786755099}
   mask: {fileID: 7243460471221189647}
-  enemyCount: 0
 --- !u!1 &7243460471221189647
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,4 +744,3 @@ MonoBehaviour:
   doors: {fileID: 1989686966346969279}
   trigger: {fileID: 8546219694326064678}
   mask: {fileID: 7243460471221189647}
-  enemyCount: 0
