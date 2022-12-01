@@ -8,6 +8,8 @@ TagManager:
   - Rooms
   - Doors
   - EnemySpawn
+  - Enemies
+  - Bullet
   layers:
   - Default
   - TransparentFX

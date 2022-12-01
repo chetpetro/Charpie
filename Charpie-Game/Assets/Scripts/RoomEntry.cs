@@ -13,13 +13,17 @@ public class RoomEntry : MonoBehaviour
 
     public GameObject[] enemyPoints;
     public GameObject[] enemyList;
-    public int enemyCount;
+    private bool enemiesCreated = false;
+
+    private RoomEnemies roomEnemies;
 
     public void spawnEnemies() {
-        enemyCount = Random.Range(4, 9);
-        for (int i = 0; i < enemyCount; i++) {
+        roomEnemies = GameObject.FindGameObjectWithTag("Enemies").GetComponent<RoomEnemies>();
+        roomEnemies.enemyCount = Random.Range(4, 9);
+        for (int i = 0; i < roomEnemies.enemyCount; i++) {
             int spawnIndex = Random.Range(0, 16);
             int enemyIndex = Random.Range(0, enemyList.Length);
+
             Debug.Log("Spawned");
             Instantiate(enemyList[enemyIndex], enemyPoints[spawnIndex].transform.position, enemyPoints[spawnIndex].transform.rotation);
         }
@@ -48,7 +52,13 @@ public class RoomEntry : MonoBehaviour
 
     private void Update()
     {
-        if(enemyCount < 1)
+        roomEnemies = GameObject.FindGameObjectWithTag("Enemies").GetComponent<RoomEnemies>();
+        if (roomEnemies.enemyCount > 0)
+        {
+            enemiesCreated = true;
+        }
+
+        if(roomEnemies.enemyCount < 1 && enemiesCreated)
         {
             doors.SetActive(false);
             if (beenTriggered)

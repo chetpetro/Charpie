@@ -5,8 +5,10 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     private Rigidbody2D Rb;
+    public GameObject[] enemy;
     private Vector3 lastVelocity;
     private int bounceCount;
+    
 
     private void Awake()
     {
