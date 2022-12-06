@@ -12,7 +12,9 @@ public class EnemyHit : MonoBehaviour
         roomEnemies = GameObject.FindGameObjectWithTag("Enemies").GetComponent<RoomEnemies>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) {
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("hit");
         if (collision.gameObject.tag == "Bullet")
         {
             health -= 1;

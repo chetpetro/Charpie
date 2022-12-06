@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 3779090756201020618}
   - component: {fileID: 4671799772004558306}
   - component: {fileID: 1727959114723874349}
-  - component: {fileID: 4657520012853091459}
+  - component: {fileID: 8796786698629822936}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Untagged
@@ -213,7 +213,7 @@ MonoBehaviour:
   repathRateCompatibility: NaN
   canSearchCompability: 0
   orientation: 1
-  enableRotation: 1
+  enableRotation: 0
   autoRepath:
     mode: 2
     interval: 0.5
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   target: {fileID: 0}
---- !u!114 &4657520012853091459
+--- !u!114 &8796786698629822936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,6 +253,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4715580921336998223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3048ddb2e8a49449b82fa4a7f7a2324b, type: 3}
+  m_Script: {fileID: 11500000, guid: b4f126331f3ac4d7f8a2ea4f2272dd17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

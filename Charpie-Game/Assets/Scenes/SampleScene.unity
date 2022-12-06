@@ -534,6 +534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 715263629}
   - component: {fileID: 715263628}
+  - component: {fileID: 715263630}
   m_Layer: 0
   m_Name: A*
   m_TagString: Untagged
@@ -611,6 +612,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &715263630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715263627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 142a19081c3d44338b984275e5085150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &918712353
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,7 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eca9b9206b36446869b5f49bbd9ea2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 4
   Rb: {fileID: 918712355}
   weapon: {fileID: 1882434000}
 --- !u!50 &918712355
@@ -1226,7 +1239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b49aabf6e769d455ba110365c3850e3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 918712357}
 --- !u!114 &1738662668
 MonoBehaviour:
   m_ObjectHideFlags: 0
