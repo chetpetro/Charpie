@@ -125,6 +125,7 @@ MonoBehaviour:
   moveSpeed: 4
   Rb: {fileID: 315480550136669648}
   weapon: {fileID: 315480551177927715}
+  animator: {fileID: 4004107106944077213}
 --- !u!58 &315480550136669653
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -284,6 +285,7 @@ GameObject:
   - component: {fileID: 4058617549151600619}
   - component: {fileID: 1073554133981890786}
   - component: {fileID: 8298809807195402529}
+  - component: {fileID: 4004107106944077213}
   m_Layer: 0
   m_Name: Base_Character_0
   m_TagString: Untagged
@@ -370,3 +372,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: badc5bfd01b154d9ab054dc4dea203cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &4004107106944077213
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463779646033807651}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7c713a43db11b44c9a50919aedc491d6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

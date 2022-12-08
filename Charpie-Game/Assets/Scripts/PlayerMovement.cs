@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Weapon weapon;
 
+    public Animator animator;
+
     // Update is called once per frame
     void Update()
     {
@@ -26,6 +28,10 @@ public class PlayerMovement : MonoBehaviour
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
+
+        animator.SetFloat("Horizontal", moveX);
+        animator.SetFloat("Vertical", moveY);
+        animator.SetFloat("Speed", moveDirection.sqrMagnitude);
 
         moveDirection = new Vector2(moveX, moveY);
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
