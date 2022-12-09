@@ -8,15 +8,27 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D Rb;
     private Vector2 moveDirection;
     private Vector2 mousePosition;
+    private float shotDelay;
+    public float shotDelayReset;
 
     public Weapon weapon;
 
     public Animator animator;
 
+    private void Start()
+    {
+        shotDelay = shotDelayReset;
+    }
+
     // Update is called once per frame
     void Update()
     {
         ProcessInputs();
+
+        if(shotDelay > 0)
+        {
+            shotDelay -= Time.deltaTime;
+        }
     }
 
     void FixedUpdate()
@@ -36,9 +48,10 @@ public class PlayerMovement : MonoBehaviour
         moveDirection = new Vector2(moveX, moveY);
         mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && shotDelay <= 0)
         {
             weapon.Fire();
+            shotDelay = shotDelayReset;
         }
     }
 

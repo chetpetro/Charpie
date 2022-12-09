@@ -37,6 +37,9 @@ public class RoomEntry : MonoBehaviour
             mask.SetActive(false);
             beenTriggered= true;
 
+            clearBullets();
+
+
             if (enemyPoints.Length == 0) {
                 enemiesSpawned= true;
             }
@@ -48,6 +51,17 @@ public class RoomEntry : MonoBehaviour
 
         }
 
+    }
+
+    private void clearBullets()
+    {
+        var bullets = GameObject.FindGameObjectsWithTag("Bullet");
+
+
+        foreach(var bullet in bullets)
+        {
+            Destroy(bullet); 
+        }
     }
 
     private void Update()
