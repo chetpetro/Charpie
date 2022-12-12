@@ -6,6 +6,7 @@ public class EnemyHit : MonoBehaviour
 {
     private int health = 2;
     private RoomEnemies roomEnemies;
+    public GameObject coin;
 
     private void Start()
     {
@@ -22,6 +23,7 @@ public class EnemyHit : MonoBehaviour
             if (health < 1)
             {
                 roomEnemies.enemyCount -= 1;
+                Instantiate(coin, gameObject.transform.position, gameObject.transform.rotation);
                 Destroy(gameObject);
             }
         }

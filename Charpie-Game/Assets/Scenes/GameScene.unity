@@ -991,6 +991,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 315480550136669649, guid: 43abd73b8c25f477688083896b793544, type: 3}
+      propertyPath: shotDelayReset
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 315480550136669650, guid: 43abd73b8c25f477688083896b793544, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1042,6 +1046,10 @@ PrefabInstance:
     - target: {fileID: 315480550136669654, guid: 43abd73b8c25f477688083896b793544, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344539296886204183, guid: 43abd73b8c25f477688083896b793544, type: 3}
+      propertyPath: playerHeath
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43abd73b8c25f477688083896b793544, type: 3}

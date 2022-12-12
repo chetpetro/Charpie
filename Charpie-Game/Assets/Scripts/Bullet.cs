@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour
     public GameObject[] enemy;
     private Vector3 lastVelocity;
     private int bounceCount;
+
+    private PlayerStats playerStats;
     
 
     private void Awake()
@@ -25,6 +27,9 @@ public class Bullet : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             Destroy(gameObject);
+            playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+            playerStats.playerHeath -= 1;
+            
         }
         else
         {

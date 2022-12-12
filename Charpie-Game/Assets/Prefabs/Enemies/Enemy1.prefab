@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8002091779232528225}
   m_Layer: 0
   m_Name: Enemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51,7 +51,7 @@ GameObject:
   - component: {fileID: 5723466703255183274}
   m_Layer: 0
   m_Name: Enemy1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,6 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63a6688edf9d349069f444d29d9505bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coin: {fileID: 5680873436664555184, guid: 2daed8cfcaf3f49ad9530bfd550980e2, type: 3}
 --- !u!114 &3779090756201020618
 MonoBehaviour:
   m_ObjectHideFlags: 0

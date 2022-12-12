@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 mousePosition;
     private float shotDelay;
     public float shotDelayReset;
+    private PlayerStats playerStats;
 
     public Weapon weapon;
 
@@ -62,6 +63,16 @@ public class PlayerMovement : MonoBehaviour
         Vector2 aimDirection = mousePosition - Rb.position;
         float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
         Rb.rotation = aimAngle;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+            playerStats.playerHeath -= 1;
+        }
     }
 
 }
