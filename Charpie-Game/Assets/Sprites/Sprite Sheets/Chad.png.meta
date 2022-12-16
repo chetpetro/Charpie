@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 49e3c66c09599408890f1f2521acfe16
+guid: 2ce25489a5f18462b99110394317d1ff
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,8 +45,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PowerUp_0
+      name: Chad_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 71
-        width: 16
-        height: 12
+        x: 0
+        y: 40
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 236101ff1981045c79435bf781a1e284
-      internalID: -937260624
+      spriteID: 441ab0b833bc042a19e6e9b9aca50695
+      internalID: -281259576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PowerUp_1
+      name: Chad_2
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 40
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250d3f7d121f74b129812256c9685802
+      internalID: 1716916453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chad_3
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 20
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b0bec0a9cf74e90b84f4e3f5f39c18
+      internalID: -349920330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chad_4
       rect:
         serializedVersion: 2
         x: 40
-        y: 71
-        width: 16
-        height: 12
+        y: 40
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,62 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aacb926698b1340a8857ef45c3c46cdb
-      internalID: 680837959
+      spriteID: b17a7c3d3217641fb9f11229dd4afa23
+      internalID: 330533430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PowerUp_2
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 71
-        width: 16
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0803e030f3cbf439a956a85c0921e934
-      internalID: -1291281531
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PowerUp_3
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 39
-        width: 16
-        height: 14
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44992d001c8a84e94b6f79ea21bdbcf8
-      internalID: 1768590547
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PowerUp_4
+      name: Chad_5
       rect:
         serializedVersion: 2
         x: 40
-        y: 39
-        width: 16
-        height: 14
+        y: 20
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c12ca9e194d624642b0ca3da54ca7fc4
-      internalID: -284051342
+      spriteID: 32e40ac554d0d4d8698e8c129188738d
+      internalID: -147498747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PowerUp_5
+      name: Chad_6
       rect:
         serializedVersion: 2
-        x: 72
-        y: 39
-        width: 16
-        height: 15
+        x: 0
+        y: 20
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c7a750c231454062a47b40f4766a73d
-      internalID: -1287252062
+      spriteID: 56cda31566ef448b4a07c4fbf9eab529
+      internalID: -909159124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PowerUp_6
+      name: Chad_7
       rect:
         serializedVersion: 2
-        x: 8
-        y: 7
-        width: 16
-        height: 16
+        x: 0
+        y: 0
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +257,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 639ee5f77b12041b0b31f90cf6c9870d
-      internalID: 1028772974
+      spriteID: 750e266866d274225bab7d5a3b447fbc
+      internalID: -1114577185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PowerUp_7
+      name: Chad_8
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 20
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700d8b652c7564622ada5fd1f392dcc4
+      internalID: -1539051388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chad_9
       rect:
         serializedVersion: 2
         x: 40
-        y: 7
-        width: 16
-        height: 17
+        y: 0
+        width: 20
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,8 +299,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de4199a20d514461c9cfa3461f6bf17f
-      internalID: -1791436876
+      spriteID: 4408b178f053b42f6ab494fb3e52d88e
+      internalID: 1732179494
       vertices: []
       indices: 
       edges: []
@@ -288,21 +309,23 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PowerUp_6: 1028772974
-      PowerUp_5: -1287252062
-      PowerUp_2: -1291281531
-      PowerUp_1: 680837959
-      PowerUp_4: -284051342
-      PowerUp_3: 1768590547
-      PowerUp_7: -1791436876
-      PowerUp_0: -937260624
+      Chad_5: -147498747
+      Chad_8: -1539051388
+      Chad_4: 330533430
+      Chad_1: -1687054890
+      Chad_6: -909159124
+      Chad_0: -281259576
+      Chad_2: 1716916453
+      Chad_7: -1114577185
+      Chad_9: 1732179494
+      Chad_3: -349920330
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
