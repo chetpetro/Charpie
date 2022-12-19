@@ -1261,6 +1261,7 @@ MonoBehaviour:
   - {fileID: 6908590144714791324}
   enemyList:
   - {fileID: 4428247434300089301, guid: d1d6b3c382a86124e84a9e69d28b385d, type: 3}
+  - {fileID: 4428247434300089301, guid: 51fb4c53220614c46ac590ed7d10ea35, type: 3}
 --- !u!1 &5354913536596371711
 GameObject:
   m_ObjectHideFlags: 0
