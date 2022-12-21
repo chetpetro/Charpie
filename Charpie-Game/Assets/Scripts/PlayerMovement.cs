@@ -70,9 +70,23 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.gameObject.tag == "Enemy")
         {
-            playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
-            playerStats.playerHeath -= 1;
+            InvokeRepeating("DamagePlayer", 0f, 1f);
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+
+        if (collision.gameObject.tag == "Enemy")
+        {
+            CancelInvoke("DamagePlayer");
+        }
+    }
+
+    public void DamagePlayer()
+    {
+        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        playerStats.playerHeath -= 1;
     }
 
 }

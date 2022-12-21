@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyHit : MonoBehaviour
 {
-    private int health = 2;
+    public int health;
     private RoomEnemies roomEnemies;
     public GameObject coin;
 
