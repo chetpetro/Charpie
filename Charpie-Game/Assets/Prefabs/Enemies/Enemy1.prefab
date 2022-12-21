@@ -161,7 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63a6688edf9d349069f444d29d9505bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
   coin: {fileID: 5680873436664555184, guid: 2daed8cfcaf3f49ad9530bfd550980e2, type: 3}
 --- !u!114 &3779090756201020618
 MonoBehaviour:
@@ -259,8 +258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f126331f3ac4d7f8a2ea4f2272dd17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 2
-  minSpeed: 0.5
 --- !u!95 &5723466703255183274
 Animator:
   serializedVersion: 4
