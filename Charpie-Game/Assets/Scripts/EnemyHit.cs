@@ -7,6 +7,7 @@ public class EnemyHit : MonoBehaviour
     public int health;
     private RoomEnemies roomEnemies;
     public GameObject coin;
+    public float hitSpeed;
 
     private void Start()
     {

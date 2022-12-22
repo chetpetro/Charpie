@@ -13,12 +13,15 @@ public class PlayerMovement : MonoBehaviour
     private PlayerStats playerStats;
 
     public Weapon weapon;
+    private EnemyHit enemyHit;
+    private GameObject[] enemyList;
 
     public Animator animator;
 
     private void Start()
     {
         shotDelay = shotDelayReset;
+
     }
 
     // Update is called once per frame
@@ -70,7 +73,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.gameObject.tag == "Enemy")
         {
-            InvokeRepeating("DamagePlayer", 0f, 1f);
+            enemyList = GameObject.FindGameObjectsWithTag("Enemy");
+            for (int i = 0; i < enemyList.Length; i++)
+            {
+                enemyHit = enemyList[i].GetComponent<EnemyHit>();
+            }
+
+            InvokeRepeating("DamagePlayer", 0f, enemyHit.hitSpeed);
         }
     }
 
@@ -85,6 +94,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void DamagePlayer()
     {
+
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
         playerStats.playerHeath -= 1;
     }
