@@ -22,7 +22,7 @@ public class ShopMenu : MonoBehaviour {
     public void BuyHealth()
     {
         int healthCost = 100;
-        if(playerStats.playerCoins >= healthCost)
+        if(playerStats.playerCoins >= healthCost && playerStats.playerHeath < playerStats.maxHealth)
         {
             playerStats.playerCoins -= healthCost;
             playerStats.playerHeath += 1;
@@ -31,6 +31,7 @@ public class ShopMenu : MonoBehaviour {
 
     public void ShopButton(int buttonNumber)
     {
+
         // 0 = Increased Health
         // 1 = Increased Damage
         // 2 = Fire rate
@@ -38,8 +39,48 @@ public class ShopMenu : MonoBehaviour {
         // 4 = coin
         if (powerups[buttonNumber] == 0)
         {
+            if (playerStats.playerCoins < 200) {
+                return;
+            }
 
+            playerStats.playerHeath += 2;
+            playerStats.maxHealth += 2;
+            playerStats.playerCoins -= 200;
         }
+
+        if (powerups[buttonNumber] == 1) {
+            if (playerStats.playerCoins < 200) {
+                return;
+            }
+            playerStats.playerCoins -= 200;
+            playerStats.playerDamage += 1;
+        }
+
+        if (powerups[buttonNumber] == 2) {
+            if (playerStats.playerCoins < 200) {
+                return;
+            }
+            playerStats.playerCoins -= 200;
+            playerStats.shotDelayReset -= playerStats.shotDelayReset * 0.3f;
+        }
+
+        if (powerups[buttonNumber] == 3) {
+            if (playerStats.playerCoins < 200) {
+                return;
+            }
+            playerStats.playerCoins -= 200;
+            playerStats.playerMovementSpeed += 1;
+        }
+
+        if (powerups[buttonNumber] == 4) {
+            if (playerStats.playerCoins < 200) {
+                return;
+            }
+            playerStats.playerCoins -= 200;
+            playerStats.coinMultiplyer += 0.3f;
+        }
+
+
     }
 
 }

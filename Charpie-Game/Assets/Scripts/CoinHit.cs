@@ -12,7 +12,7 @@ public class CoinHit : MonoBehaviour
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
         if (collision.gameObject.name == "Player")
         {
-            playerStats.playerCoins += Random.Range(10, 25);
+            playerStats.playerCoins += (int) Mathf.Round(Random.Range(10, 25) * playerStats.coinMultiplyer) ;
             Destroy(gameObject);
         }
     }

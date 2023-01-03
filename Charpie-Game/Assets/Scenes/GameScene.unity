@@ -2474,8 +2474,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 490114567}
     - target: {fileID: 1344539296886204183, guid: 43abd73b8c25f477688083896b793544, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344539296886204183, guid: 43abd73b8c25f477688083896b793544, type: 3}
+      propertyPath: playerCoins
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344539296886204183, guid: 43abd73b8c25f477688083896b793544, type: 3}
       propertyPath: playerHeath
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344539296886204183, guid: 43abd73b8c25f477688083896b793544, type: 3}
+      propertyPath: playerDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344539296886204183, guid: 43abd73b8c25f477688083896b793544, type: 3}
+      propertyPath: coinMultiplyer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344539296886204183, guid: 43abd73b8c25f477688083896b793544, type: 3}
+      propertyPath: shotDelayReset
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344539296886204183, guid: 43abd73b8c25f477688083896b793544, type: 3}
+      propertyPath: playerMovementSpeed
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43abd73b8c25f477688083896b793544, type: 3}

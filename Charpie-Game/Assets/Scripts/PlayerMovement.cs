@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed;
+ 
     public Rigidbody2D Rb;
     private Vector2 moveDirection;
     private Vector2 mousePosition;
     private float shotDelay;
-    public float shotDelayReset;
     private PlayerStats playerStats;
 
     public Weapon weapon;
@@ -20,8 +19,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        shotDelay = shotDelayReset;
-
+        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        shotDelay = playerStats.shotDelayReset;
     }
 
     // Update is called once per frame
@@ -55,13 +54,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && shotDelay <= 0)
         {
             weapon.Fire();
-            shotDelay = shotDelayReset;
+            shotDelay = playerStats.shotDelayReset;
         }
     }
 
     void Move()
     {
-        Rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        Rb.velocity = new Vector2(moveDirection.x * playerStats.playerMovementSpeed, moveDirection.y * playerStats.playerMovementSpeed);
 
         Vector2 aimDirection = mousePosition - Rb.position;
         float aimAngle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg - 90f;
@@ -94,8 +93,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void DamagePlayer()
     {
-
-        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
         playerStats.playerHeath -= 1;
     }
 

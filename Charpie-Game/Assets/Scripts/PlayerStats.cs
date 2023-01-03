@@ -7,11 +7,16 @@ public class PlayerStats : MonoBehaviour
 {
     public int playerHeath;
     public int playerCoins;
+    public int playerDamage;
+    public float coinMultiplyer; 
+    public float playerMovementSpeed;
+    public int maxHealth;
+    public float shotDelayReset;
     public HealthBar healthBar;
 
     void Start()
     {
-        healthBar.SetMaxHealth(playerHeath);
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     private void Update()

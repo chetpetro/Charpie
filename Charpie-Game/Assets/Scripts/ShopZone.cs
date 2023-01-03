@@ -6,6 +6,10 @@ public class ShopZone : MonoBehaviour
 {
     public GameObject shopUi;
 
+    private void Start() {
+        shopUi.SetActive(false);
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
