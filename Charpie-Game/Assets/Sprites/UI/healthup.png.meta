@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a92e83dcee271c042ac259528c3e47d4
+guid: b890980e2b1664fbcacf7bb62e2bc346
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,7 +106,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: damge_0
+      name: healthup_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 9
-        width: 31
-        height: 15
+        x: 14
+        y: 6
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 739e5c1a60f7c4583a43550bd3faa1e6
-      internalID: 722184831
+      spriteID: ef8fabe7df00649508badf973502bfdd
+      internalID: -1347171328
       vertices: []
       indices: 
       edges: []
@@ -148,8 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      damge_0: 722184831
-      damge_1: 1936051534
+      healthup_0: -1347171328
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

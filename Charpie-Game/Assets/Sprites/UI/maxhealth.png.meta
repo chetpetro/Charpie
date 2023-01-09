@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a92e83dcee271c042ac259528c3e47d4
+guid: cb6e8c5e2ca3448d786ef41e1c6b906b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,14 +45,14 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.51878977, y: 0.3459225}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 13, y: 3, z: 12, w: 19}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -106,7 +106,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: damge_0
+      name: maxhealth_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 9
-        width: 31
-        height: 15
+        x: 14
+        y: 4
+        width: 24
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,25 +131,33 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 739e5c1a60f7c4583a43550bd3faa1e6
-      internalID: 722184831
+      spriteID: b0c65a796b08d4316acbb5719123db8e
+      internalID: 768840958
       vertices: []
       indices: 
       edges: []
       weights: []
-    outline: []
+    outline:
+    - - {x: -12, y: 7}
+      - {x: -13, y: 5}
+      - {x: -13, y: -14}
+      - {x: -1, y: -23}
+      - {x: 12, y: -23}
+      - {x: 15, y: -22}
+      - {x: 15, y: -1}
+      - {x: 14, y: 2}
+      - {x: 8, y: 7}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      damge_0: 722184831
-      damge_1: 1936051534
+      maxhealth_0: 768840958
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

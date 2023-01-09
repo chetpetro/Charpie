@@ -43,7 +43,7 @@ public class ShopMenu : MonoBehaviour {
                 return;
             }
 
-            playerStats.playerHeath += 2;
+            playerStats.playerHeath += 1;
             playerStats.maxHealth += 2;
             playerStats.playerCoins -= 200;
         }
