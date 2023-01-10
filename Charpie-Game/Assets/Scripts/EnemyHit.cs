@@ -18,13 +18,15 @@ public class EnemyHit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("hit");
+        // Check if an enemy is colliding with a bullet
         if (collision.gameObject.tag == "Bullet")
         {
+            // If it is, reduce the health of the enemy by the damage of the player
             health -= playerStats.playerDamage;
 
             if (health < 1)
             {
+                // If the enemy has no health, kill the enemy and have it drop a coin where it died
                 roomEnemies.enemyCount -= 1;
                 Instantiate(coin, gameObject.transform.position, gameObject.transform.rotation);
                 Destroy(gameObject);

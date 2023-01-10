@@ -11,6 +11,7 @@ public class SpriteRotation : MonoBehaviour
         InitRot = transform.rotation;
     }
 
+    // Stops the player sprite from rotating since it is tied to the gun
     private void Update()
     {
         if(gameObject.transform.parent == null)

@@ -7,13 +7,9 @@ public class UpdateGraph : MonoBehaviour
 
     private float waitTime = 3f;
     private bool updated = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+
+    // After the map has generated, update the graphs of the map so the A* pathfinding algroithm can work
     void Update(){
         if(waitTime < 0){
             if (!updated){

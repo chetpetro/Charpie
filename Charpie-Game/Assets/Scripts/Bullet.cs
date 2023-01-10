@@ -24,15 +24,17 @@ public class Bullet : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Check to see what a bullet is colliding with
         if (collision.gameObject.name == "Player")
         {
+            // If it is colliding with the player, destory it and damage the player
             Destroy(gameObject);
             playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
             playerStats.playerHeath -= 1;
-            
         }
         else
         {
+            // If it is a wall, make the bullet bounce off of the wall
             var speed = lastVelocity.magnitude;
             var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
 
@@ -41,6 +43,7 @@ public class Bullet : MonoBehaviour
 
             if (bounceCount > 10)
             {
+                // Destroy the bullet if it has bounced 10 times
                 Destroy(gameObject);
             }
         }

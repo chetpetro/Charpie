@@ -18,6 +18,7 @@ public class ToggleMap : MonoBehaviour
 
     void Update()
     {
+        // If the player presses m open the map and disable the minimap
         if (Input.GetKeyDown("m"))
         {
             miniMap.SetActive(false);
@@ -25,6 +26,7 @@ public class ToggleMap : MonoBehaviour
             bigMap.SetActive(true);
             bigMapBg.SetActive(true);
         }
+        // disable the big map when m is release and show the minimap
         if (Input.GetKeyUp("m"))
         {
             miniMapBg.SetActive(true);

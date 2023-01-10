@@ -4,5 +4,6 @@ using UnityEngine;
 
 public class RoomEnemies : MonoBehaviour
 {
+    // Store the count of room enemies
     public int enemyCount;
 }

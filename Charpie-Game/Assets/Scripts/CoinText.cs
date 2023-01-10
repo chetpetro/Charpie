@@ -18,6 +18,7 @@ public class CoinText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Update the UI element to match the current amount of coins the player has
         mText.text = playerStats.playerCoins.ToString();
     }
 }

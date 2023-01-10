@@ -11,14 +11,13 @@ public class SetShopImage : MonoBehaviour
     public Sprite[] imageList;
 
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start(){
         shopMenu = GameObject.FindGameObjectWithTag("Shop").GetComponent<ShopMenu>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update(){
+        // For each powerup, get the correct image and set that image to the cooresponding powerup
         gameObject.GetComponent<Image>().sprite = imageList[shopMenu.powerups[buttonNumber]];
     }
 }
