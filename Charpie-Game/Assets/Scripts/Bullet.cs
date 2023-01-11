@@ -31,12 +31,14 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
             playerStats.playerHeath -= 1;
+            FindObjectOfType<AudioManager>().Play("PlayerHurt");
         }
         else
         {
             // If it is a wall, make the bullet bounce off of the wall
             var speed = lastVelocity.magnitude;
             var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
+            FindObjectOfType<AudioManager>().Play("BulletBounce");
 
             Rb.velocity = direction * Mathf.Max(speed, 0f);
             bounceCount += 1;

@@ -18,6 +18,7 @@ public class Weapon : MonoBehaviour
         if (!playerStats.inShop) {
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.up * fireForce, ForceMode2D.Impulse);
+            FindObjectOfType<AudioManager>().Play("GunShot");
         }
     }
 }

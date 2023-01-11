@@ -84,6 +84,7 @@ public class PlayerMovement : MonoBehaviour
 
             for (int i = 0; i < enemyList.Length; i++){
                 enemyHit = enemyList[i].GetComponent<EnemyHit>();
+              
             }
 
             InvokeRepeating("DamagePlayer", 0f, enemyHit.hitSpeed);
@@ -103,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Damage the player
         playerStats.playerHeath -= 1;
+        FindObjectOfType<AudioManager>().Play("PlayerHurt");
     }
 
 }
