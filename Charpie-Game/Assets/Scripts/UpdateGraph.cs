@@ -5,8 +5,8 @@ using UnityEngine;
 public class UpdateGraph : MonoBehaviour
 {
 
-    private float waitTime = 3f;
-    private bool updated = false;
+    public float waitTime = 3f;
+    public bool updated = false;
 
 
     // After the map has generated, update the graphs of the map so the A* pathfinding algroithm can work
