@@ -23,6 +23,7 @@ public class EnemyHit : MonoBehaviour
         {
             // If it is, reduce the health of the enemy by the damage of the player
             health -= playerStats.playerDamage;
+            FindObjectOfType<AudioManager>().Play("EnemyHurt");
 
             if (health < 1)
             {
