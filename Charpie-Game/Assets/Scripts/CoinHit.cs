@@ -15,6 +15,7 @@ public class CoinHit : MonoBehaviour
         {
             // Destroy the coin and update the player's coin total when the player grabs the coin
             playerStats.playerCoins += (int) Mathf.Round(Random.Range(10, 25) * playerStats.coinMultiplyer) ;
+            // Finds the audio in set of arrays and plays the audio when requirement is met
             FindObjectOfType<AudioManager>().Play("CoinHit");
             Destroy(gameObject);
         }

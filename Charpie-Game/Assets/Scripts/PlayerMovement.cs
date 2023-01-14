@@ -104,6 +104,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Damage the player
         playerStats.playerHeath -= 1;
+        // Finds the audio in set of arrays and plays the audio when requirement is met
         FindObjectOfType<AudioManager>().Play("PlayerHurt");
     }
 

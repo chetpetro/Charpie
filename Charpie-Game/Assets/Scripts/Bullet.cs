@@ -31,6 +31,7 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
             playerStats.playerHeath -= 1;
+            // Finds the audio in set of arrays and plays the audio when requirement is met
             FindObjectOfType<AudioManager>().Play("PlayerHurt");
         }
         else
@@ -38,6 +39,7 @@ public class Bullet : MonoBehaviour
             // If it is a wall, make the bullet bounce off of the wall
             var speed = lastVelocity.magnitude;
             var direction = Vector3.Reflect(lastVelocity.normalized, collision.contacts[0].normal);
+            // Finds the audio in set of arrays and plays the audio when requirement is met
             FindObjectOfType<AudioManager>().Play("BulletBounce");
 
             Rb.velocity = direction * Mathf.Max(speed, 0f);
