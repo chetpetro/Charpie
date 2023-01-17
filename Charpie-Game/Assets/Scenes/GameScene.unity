@@ -1635,6 +1635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitTime: 3
   updated: 0
+  door: {fileID: 3501318292848724479, guid: 6810d5d22e6f091488a779a251cc0e80, type: 3}
 --- !u!1 &784192318
 GameObject:
   m_ObjectHideFlags: 0
