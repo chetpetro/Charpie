@@ -8,12 +8,13 @@ public class EnemyHit : MonoBehaviour
     private RoomEnemies roomEnemies;
     private PlayerStats playerStats;
     public GameObject coin;
-    public float hitSpeed;
 
     private void Start()
     {
         roomEnemies = GameObject.FindGameObjectWithTag("Enemies").GetComponent<RoomEnemies>();
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        health *= (int) Mathf.Round(Mathf.Pow(playerStats.levelNumber, 1.5f));
+        Debug.Log(health);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

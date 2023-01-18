@@ -28,7 +28,7 @@ public class UpdateGraph : MonoBehaviour
 
                 for(int i = 1; i < roomTemplates.rooms.Count; i++)
                 {
-                    if(roomTemplates.rooms[roomTemplates.rooms.Count - i].name != "Empty Room (Clone)")
+                    if(roomTemplates.rooms[roomTemplates.rooms.Count - i].name != "Empty Room(Clone)")
                     {
                         Instantiate(door, roomTemplates.rooms[roomTemplates.rooms.Count - i].transform.position, roomTemplates.rooms[roomTemplates.rooms.Count - i].transform.rotation);
                         break;

@@ -15,6 +15,7 @@ public class PlayerStats : MonoBehaviour
     public float shotDelayReset;
     public HealthBar healthBar;
     public bool inShop = false;
+    public int levelNumber;
 
     void Start()
     {
@@ -27,9 +28,9 @@ public class PlayerStats : MonoBehaviour
         // call the update function of setting the health of the healthbar
         healthBar.SetHealth(playerHeath);
 
-        // Reload the scene if the player dies
+        //the player dies
         if (playerHeath <= 0){
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(2);
         }
     }
 }

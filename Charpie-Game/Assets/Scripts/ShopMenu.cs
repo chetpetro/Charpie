@@ -23,7 +23,7 @@ public class ShopMenu : MonoBehaviour {
     public void BuyHealth()
     {
         // Increase the health of the player if they buy increase health
-        int healthCost = 100;
+        int healthCost = 50;
         if(playerStats.playerCoins >= healthCost && playerStats.playerHeath < playerStats.maxHealth)
         {
             playerStats.playerCoins -= healthCost;
@@ -41,44 +41,44 @@ public class ShopMenu : MonoBehaviour {
         // 4 = coin
         if (powerups[buttonNumber] == 0)
         {
-            if (playerStats.playerCoins < 300) {
+            if (playerStats.playerCoins < 200) {
                 return;
             }
 
             playerStats.playerHeath += 1;
             playerStats.maxHealth += 2;
-            playerStats.playerCoins -= 300;
+            playerStats.playerCoins -= 200;
         }
 
         if (powerups[buttonNumber] == 1) {
-            if (playerStats.playerCoins < 300) {
+            if (playerStats.playerCoins < 200) {
                 return;
             }
-            playerStats.playerCoins -= 300;
+            playerStats.playerCoins -= 200;
             playerStats.playerDamage += 1;
         }
 
         if (powerups[buttonNumber] == 2) {
-            if (playerStats.playerCoins < 300) {
+            if (playerStats.playerCoins < 200) {
                 return;
             }
-            playerStats.playerCoins -= 300;
+            playerStats.playerCoins -= 200;
             playerStats.shotDelayReset -= playerStats.shotDelayReset * 0.3f;
         }
 
         if (powerups[buttonNumber] == 3) {
-            if (playerStats.playerCoins < 300) {
+            if (playerStats.playerCoins < 200) {
                 return;
             }
-            playerStats.playerCoins -= 300;
+            playerStats.playerCoins -= 200;
             playerStats.playerMovementSpeed += 1;
         }
 
         if (powerups[buttonNumber] == 4) {
-            if (playerStats.playerCoins < 300) {
+            if (playerStats.playerCoins < 200) {
                 return;
             }
-            playerStats.playerCoins -= 300;
+            playerStats.playerCoins -= 200;
             playerStats.coinMultiplyer += 0.3f;
         }
     }

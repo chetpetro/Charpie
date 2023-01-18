@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FinalDoor : MonoBehaviour
 {
@@ -8,18 +9,21 @@ public class FinalDoor : MonoBehaviour
     private RoomTemplates roomTemplates;
     private UpdateGraph updateGraph;
     public GameObject startRoom;
+    public PlayerStats playerStats;
     private bool isFixed = false;
 
     private void Start() {
         roomEnemies = FindObjectOfType<RoomEnemies>();
         roomTemplates = FindObjectOfType<RoomTemplates>();
         updateGraph = FindObjectOfType<UpdateGraph>();
+        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
     }
+
     private void Update() {
         // Delete random empty room
         if (!isFixed) {
             for (int i = roomTemplates.rooms.Count - 1; i >= 1; i--) {
-                if (roomTemplates.rooms[i].transform.position == Vector3.zero) {
+                if (roomTemplates.rooms[i].transform.position == Vector3.zero && roomTemplates.rooms[i].name == "Empty Room(Clone)") {
                     Destroy(roomTemplates.rooms[i]);
                     isFixed = true;
                 }
@@ -48,7 +52,11 @@ public class FinalDoor : MonoBehaviour
                 Destroy(gameObject);
 
                 // Update modifier
-
+                playerStats.levelNumber += 1;
+                if(playerStats.levelNumber > 3)
+                {
+                    SceneManager.LoadScene(3);
+                }
 
                 // Update Graphs Timing
                 updateGraph.waitTime = 3f;

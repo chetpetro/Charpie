@@ -80,14 +80,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Continously damage the player if they are colliding with an enemy
         if (collision.gameObject.tag == "Enemy"){
-            enemyList = GameObject.FindGameObjectsWithTag("Enemy");
-
-            for (int i = 0; i < enemyList.Length; i++){
-                enemyHit = enemyList[i].GetComponent<EnemyHit>();
-              
-            }
-
-            InvokeRepeating("DamagePlayer", 0f, enemyHit.hitSpeed);
+            InvokeRepeating("DamagePlayer", 0f, 1f);
         }
     }
 
@@ -103,7 +96,7 @@ public class PlayerMovement : MonoBehaviour
     public void DamagePlayer()
     {
         // Damage the player
-        playerStats.playerHeath -= 1;
+        playerStats.playerHeath -= 1 * (int)Mathf.Pow(playerStats.levelNumber, 1.5f);
         // Finds the audio in set of arrays and plays the audio when requirement is met
         FindObjectOfType<AudioManager>().Play("PlayerHurt");
     }
