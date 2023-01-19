@@ -11,7 +11,6 @@ public class UpdateGraph : MonoBehaviour
     private RoomTemplates roomTemplates;
     public GameObject door;
 
-
     private void Start()
     {
         roomTemplates = FindObjectOfType<RoomTemplates>();
