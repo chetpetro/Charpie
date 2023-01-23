@@ -3263,7 +3263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 155995a89ca994e7c8d4dcaa9f20ac5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cloudRate: 0.5
+  cloudRate: 0.4
 --- !u!1 &963447485
 GameObject:
   m_ObjectHideFlags: 0
@@ -5430,7 +5430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 155995a89ca994e7c8d4dcaa9f20ac5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cloudRate: 0.25
+  cloudRate: 0.2
 --- !u!1 &1704152762
 GameObject:
   m_ObjectHideFlags: 0
