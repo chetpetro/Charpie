@@ -4532,7 +4532,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Relic Rush\n\nJordan Saad - UI, main menu, sprites, animation\n\nChet
+  m_text: "Relic Rush\n\nJordan Saad - UI, main menu, sprites, animation, graphics\n\nChet
     Petro - Room generation, scene management, shop, enemies \n\nAndrew Won - UI,
     Pause menu, sound, sprites\n\nLiam Krohn - Player movement, enemies, animation,
     weapon/bullet movement"
