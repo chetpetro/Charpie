@@ -1,2 +1,2 @@
-# Charpie
+# Relic Rush
 game project
